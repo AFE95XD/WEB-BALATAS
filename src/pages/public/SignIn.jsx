@@ -1,5 +1,13 @@
+import Nav from "../../components/Nav";
+import Registrarse from "../../components/SignIn/Registrarse";
+
 const SignIn = () => {
-  return <div>Registro</div>;
+  return (
+    <>
+      <Nav />
+      <Registrarse />
+    </>
+  );
 };
 
 export default SignIn;

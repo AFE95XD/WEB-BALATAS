@@ -3,13 +3,13 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Nav = () => {
   return (
-    // <div className="fixed z-50 w-full">
-    <div>
-      <div className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+    <div className="fixed z-50 w-full">
+      {/** <div> */}
+      <div className="flex h-10 items-center justify-center bg-[#db2d2e] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
         Llámanos: ​​(722) 238 5244, (722) 705 9029, (722) 471 1254
       </div>
-      {/* <Disclosure as="nav" className="bg-white fixed z-40 w-full"> */}
-      <Disclosure as="nav">
+      <Disclosure as="nav" className="bg-white fixed z-40 w-full">
+        {/* <Disclosure as="nav" className="bg-slate-500"> */}
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

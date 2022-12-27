@@ -2,6 +2,8 @@ import {
   LifebuoyIcon,
   NewspaperIcon,
   PhoneIcon,
+  WrenchScrewdriverIcon,
+  TruckIcon,
 } from "@heroicons/react/24/outline";
 
 const supportLinks = [
@@ -10,7 +12,7 @@ const supportLinks = [
     href: "#",
     description:
       "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
-    icon: PhoneIcon,
+    icon: WrenchScrewdriverIcon,
   },
   {
     name: "Technical Support",
@@ -24,37 +26,34 @@ const supportLinks = [
     href: "#",
     description:
       "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
-    icon: NewspaperIcon,
+    icon: TruckIcon,
   },
 ];
 
 const SecCards = () => {
   return (
-    <section className="relative z-10 mx-auto sm:mt-0 max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 lg:-mt-24 ">
+    <section className="relative z-10 mx-auto sm:mt-0 max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 lg:-mt-24">
       <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
         {supportLinks.map((link) => (
           <div
             key={link.name}
-            className="flex flex-col rounded-2xl bg-white shadow-xl"
+            className="flex flex-col rounded-2xl bg-white shadow-xl px-6 py-8 md:px-8 items-center"
           >
-            <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
-              {/* <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-blue-600 p-5 shadow-lg">
-                <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
-              </div> */}
-              {/* <h3 c0 */}
-              <p className="mt-4 text-base text-blue-gray-500">
-                {link.description}
-              </p>
+            {/* <div className="relative flex-1 "> */}
+            <div className="inline-block transform rounded-xl bg-white px-5 pb-5">
+              <link.icon
+                className="h-10 w-10 text-[#db2d2e]"
+                aria-hidden="true"
+              />
             </div>
-            {/* <div className="rounded-bl-2xl rounded-br-2xl bg-blue-gray-50 p-6 md:px-8">
-              <a
-                href={link.href}
-                className="text-base font-medium text-blue-700 hover:text-blue-600"
-              >
-                Contact us
-                <span aria-hidden="true"> &rarr;</span>
-              </a>
-            </div> */}
+            <h3 className="text-xl font-medium text-blue-gray-900">
+              {link.name}
+            </h3>
+
+            <p className="mt-4 text-base text-blue-gray-500">
+              {link.description}
+            </p>
+            {/* </div> */}
           </div>
         ))}
       </div>

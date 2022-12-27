@@ -9,8 +9,9 @@ const Hero = () => {
       modules={[Navigation, Autoplay]}
       navigation={true}
       loop={true}
-      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
       tag="section"
+      className="pt-[6.5rem]"
     >
       <SwiperSlide>
         <img
