@@ -1,0 +1,55 @@
+import { Navigation, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+
+const Hero = () => {
+  return (
+    <Swiper
+      modules={[Navigation, Autoplay]}
+      navigation={true}
+      loop={true}
+      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      tag="section"
+    >
+      <SwiperSlide>
+        <img
+          src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider1.jpg"
+          alt="Imagen 1"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img
+          src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider2.jpg"
+          alt="Imagen 2"
+        />
+      </SwiperSlide>
+      {/* <SwiperSlide>
+        <img
+          src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider1.jpg"
+          alt="Imagen 1"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img
+          src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider2.jpg"
+          alt="Imagen 2"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img
+          src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider1.jpg"
+          alt="Imagen 1"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img
+          src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider2.jpg"
+          alt="Imagen 2"
+        />
+      </SwiperSlide> */}
+    </Swiper>
+  );
+};
+
+export default Hero;
