@@ -1,31 +1,29 @@
 import {
   LifebuoyIcon,
-  NewspaperIcon,
-  PhoneIcon,
   WrenchScrewdriverIcon,
   TruckIcon,
 } from "@heroicons/react/24/outline";
 
 const supportLinks = [
   {
-    name: "Sales",
+    name: "Cambio",
     href: "#",
     description:
-      "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+      "Nos aseguramos que tu auto tenga el rendimiento óptimo de frenado con nuestras piezas o reparaciones que necesiten.",
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: "Technical Support",
+    name: "Inspección y Diagnóstico",
     href: "#",
     description:
-      "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+      "Ofrecemos un diagnostico de los frenos en general para determinar el problema y determinar si necesitan reparación o reemplazo.",
     icon: LifebuoyIcon,
   },
   {
-    name: "Media Inquiries",
+    name: "Mantenimiento y Asesoramiento",
     href: "#",
     description:
-      "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+      "El mantenimiento de las balatas es una parte esencial de la seguridad del vehículo y debe ser realizado por un profesional.",
     icon: TruckIcon,
   },
 ];
@@ -46,11 +44,9 @@ const SecCards = () => {
                 aria-hidden="true"
               />
             </div>
-            <h3 className="text-xl font-medium text-blue-gray-900">
-              {link.name}
-            </h3>
+            <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
 
-            <p className="mt-4 text-base text-blue-gray-500">
+            <p className="mt-4 text-base text-gray-600 text-justify">
               {link.description}
             </p>
             {/* </div> */}

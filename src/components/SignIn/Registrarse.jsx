@@ -12,7 +12,7 @@ const Registrarse = () => {
     ```
   */}
       <div className="h-screen">
-        <div className="bg-[#db2d2d93] flex min-h-full flex-col justify-center py-[8.5rem] sm:px-6 lg:px-8">
+        <div className="bg-[#db2d2d2a] flex min-h-full flex-col justify-center py-[8.5rem] sm:px-6 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
             <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
               <div className="pb-6 sm:mx-auto sm:w-full sm:max-w-md">

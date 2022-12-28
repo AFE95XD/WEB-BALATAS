@@ -11,7 +11,9 @@ const SecInfo = () => {
           />
         </div>
         <div>
-          <h2 className="text-center">Siempre listos para ayudar</h2>
+          <h2 className="text-center text-4xl font-bold text-gray-900">
+            Siempre listos para ayudar
+          </h2>
           <p></p>
           <button></button>
         </div>

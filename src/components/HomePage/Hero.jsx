@@ -18,6 +18,9 @@ const Hero = () => {
           src="https://demo.themexbd.com/html/hackery/assets/images/hackery-slider1.jpg"
           alt="Imagen 1"
         />
+        {/* <h2 className="text-white font-bold text-center text-9xl absolute">
+          SM PREMIUM BRAKES
+        </h2> */}
       </SwiperSlide>
       <SwiperSlide>
         <img
