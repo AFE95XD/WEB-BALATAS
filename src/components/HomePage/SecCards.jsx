@@ -6,24 +6,24 @@ import {
 
 const supportLinks = [
   {
-    name: "Cambio",
+    name: "Servicio de Frenos",
     href: "#",
     description:
-      "Nos aseguramos que tu auto tenga el rendimiento óptimo de frenado con nuestras piezas o reparaciones que necesiten.",
+      "Nos aseguramos que tu auto tenga el rendimiento óptimo de frenado.",
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: "Inspección y Diagnóstico",
+    name: "Venta de Balatas",
     href: "#",
     description:
-      "Ofrecemos un diagnostico de los frenos en general para determinar el problema y determinar si necesitan reparación o reemplazo.",
+      "Balatas de calidad al mejor precio, la mejor eleccion para su vehiculo.",
     icon: LifebuoyIcon,
   },
   {
-    name: "Mantenimiento y Asesoramiento",
+    name: "Formas de pago",
     href: "#",
     description:
-      "El mantenimiento de las balatas es una parte esencial de la seguridad del vehículo y debe ser realizado por un profesional.",
+      "Ofrecemos una amplia gama de opciones de pago para adaptarnos a sus necesidades.",
     icon: TruckIcon,
   },
 ];

@@ -1,5 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -33,45 +34,39 @@ const Nav = () => {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a
-                      href="#"
+                    <Link
+                      to="/"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
                     >
                       Inicio
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      href="/servicios"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
+                    >
+                      Servicios
+                    </Link>
+                    <Link
+                      href="/productos"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
                     >
                       Productos
-                    </a>
-                    <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
-                    >
-                      Marcas
-                    </a>
-                    <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
-                    >
-                      Contacto
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <a
-                    href="#"
+                  <Link
+                    to="/registro"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 mr-2 hover:bg-gray-900 hover:text-white"
                   >
                     Regístrate
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="/login"
                     className="rounded-md px-3 py-2 text-sm font-medium text-white bg-[#db2d2e] hover:bg-gray-900 hover:text-white"
                   >
                     Iniciar Sesión
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="-mr-2 flex sm:hidden">
