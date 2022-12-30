@@ -14,7 +14,7 @@ const SecInfo = () => {
           <h2 className="text-center text-4xl font-bold text-gray-900 py-4">
             Siempre listos para ayudarte.
           </h2>
-          <p className="font-medium text-justify py-4 px-4 text-base text-gray-600 leading-8">
+          <p className="text-justify py-4 px-4 text-base text-gray-600 leading-8">
             Siempre estamos listos para ayudarte a elegir los mejores frenos
             para tu auto. Sabemos que los frenos son un componente esencial de
             seguridad en tu vehículo y es importante que estén en buenas
