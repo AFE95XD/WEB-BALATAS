@@ -9,8 +9,8 @@ const Hero = () => {
     <Swiper
       modules={[Navigation, Autoplay]}
       navigation={true}
-      // loop={true}
-      // autoplay={{ delay: 5000, disableOnInteraction: false }}
+      loop={true}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
       tag="section"
       className="pt-[6.5rem]"
     >
@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
             <Link
               to="/servicios"
-              className="rounded-md px-5 py-2.5 text-3xl font-semibold text-white bg-[#db2d2e] hover:bg-gray-900 hover:text-white"
+              className="rounded-md px-5 py-2.5 text-3xl font-semibold text-white bg-[#FF9B16] hover:bg-gray-900 hover:text-white"
             >
               Servicio
             </Link>
@@ -56,7 +56,7 @@ const Hero = () => {
             </p>
             <Link
               to="/servicios"
-              className="rounded-md px-5 py-2.5 text-3xl font-semibold text-white bg-[#db2d2e] hover:bg-gray-900 hover:text-white"
+              className="rounded-md px-5 py-2.5 text-3xl font-semibold text-white bg-[#FF9B16] hover:bg-gray-900 hover:text-white"
             >
               Chat
             </Link>
