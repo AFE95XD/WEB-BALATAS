@@ -4,6 +4,9 @@ import SecCards from "../../components/HomePage/SecCards";
 import SecInfo from "../../components/HomePage/SecInfo";
 import Foteer from "../../components/Foteer";
 import SecMarcas from "../../components/HomePage/SecMarcas";
+import SecCompara from "../../components/HomePage/SecCompara";
+import SecReviews from "../../components/HomePage/SecReviews";
+import SecContacto from "../../components/HomePage/SecContact";
 
 const HomePage = () => {
   return (
@@ -13,6 +16,9 @@ const HomePage = () => {
       <SecCards />
       <SecInfo />
       <SecMarcas />
+      <SecCompara />
+      <SecReviews />
+      <SecContacto />
       <Foteer />
     </>
   );

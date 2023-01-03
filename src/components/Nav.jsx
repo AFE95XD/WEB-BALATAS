@@ -41,16 +41,22 @@ const Nav = () => {
                       Inicio
                     </Link>
                     <Link
-                      href="/servicios"
+                      to="/servicios"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
                     >
                       Servicios
                     </Link>
                     <Link
-                      href="/productos"
+                      to="/productos"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
                     >
                       Productos
+                    </Link>
+                    <Link
+                      to="/blog"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-[#db2d2e] hover:text-white"
+                    >
+                      Blog
                     </Link>
                   </div>
                 </div>
@@ -92,28 +98,28 @@ const Nav = () => {
                   href="#"
                   className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
                 >
-                  Dashboard
+                  Inicio
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
                   href="#"
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
-                  Team
+                  Servicios
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
                   href="#"
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
-                  Projects
+                  Productos
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
                   href="#"
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
-                  Calendar
+                  Blog
                 </Disclosure.Button>
               </div>
             </Disclosure.Panel>

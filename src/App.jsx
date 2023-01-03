@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contact from "./pages/public/Contact";
 import HomePage from "./pages/public/HomePage";
+import Servicios from "./pages/public/Servicios";
+import Productos from "./pages/public/Productos";
 import LogIn from "./pages/public/LogIn";
-import Products from "./pages/public/Products";
 import SignIn from "./pages/public/SignIn";
+import Blog from "./pages/public/Blog";
 
 function App() {
   return (
@@ -14,9 +15,9 @@ function App() {
           <Route index element={<HomePage />}></Route>
           <Route path="login" element={<LogIn />} />
           <Route path="registro" element={<SignIn />} />
-          <Route path="productos" element={<Products />} />
-          <Route path="marcas" element={<Contact />} />
-          <Route path="contacto" element={<Contact />} />
+          <Route path="servicios" element={<Servicios />} />
+          <Route path="productos" element={<Productos />} />
+          <Route path="blog" element={<Blog />} />
         </Route>
         {/* PRIVADAS */}
       </Routes>
