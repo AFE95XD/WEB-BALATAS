@@ -1,55 +1,3 @@
-// import React, { useState, useEffect } from "react";
-
-// const SecCompara = ({ beforeImage, afterImage }) => {
-//   const [sliderValue, setSliderValue] = useState(50);
-//   const [beforeImageStyle, setBeforeImageStyle] = useState({});
-//   const [afterImageStyle, setAfterImageStyle] = useState({});
-
-//   useEffect(() => {
-//     setBeforeImageStyle({
-//       width: `${sliderValue}%`,
-//       position: "absolute",
-//       left: 0,
-//     });
-
-//     setAfterImageStyle({
-//       width: `${100 - sliderValue}%`,
-//       position: "absolute",
-//       right: 0,
-//     });
-//   }, [sliderValue]);
-
-//   const handleSliderChange = (event) => {
-//     setSliderValue(event.target.value);
-//   };
-
-//   return (
-//     <div className="relative w-full border-2">
-//       <img
-//         src={beforeImage}
-//         alt="Before"
-//         style={beforeImageStyle}
-//         className="w-full"
-//       />
-//       <img
-//         src={afterImage}
-//         alt="After"
-//         style={afterImageStyle}
-//         className="w-full"
-//       />
-//       <input
-//         type="range"
-//         min={0}
-//         max={100}
-//         value={sliderValue}
-//         onChange={handleSliderChange}
-//         className="w-full z-50"
-//       />
-//     </div>
-//   );
-// };
-
-// export default SecCompara;
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
@@ -68,9 +16,7 @@ const SecCompara = () => {
       <div style={{ width: "100vw", height: "80vh" }}>
         {/* aksjhdkjashdkjh */}
         <ReactCompareSlider
-          itemOne={
-            <ReactCompareSliderImage src={Antes} alt="Imagen 1" height={80} />
-          }
+          itemOne={<ReactCompareSliderImage src={Antes} alt="Imagen 1" />}
           itemTwo={<ReactCompareSliderImage src={Despues} alt="Imagen 2" />}
           style={styleFitContainer({
             objectFit: "contain",

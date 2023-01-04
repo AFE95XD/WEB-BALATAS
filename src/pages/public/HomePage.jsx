@@ -7,6 +7,7 @@ import SecMarcas from "../../components/HomePage/SecMarcas";
 import SecCompara from "../../components/HomePage/SecCompara";
 import SecReviews from "../../components/HomePage/SecReviews";
 import SecContacto from "../../components/HomePage/SecContact";
+// import SecMapa from "../../components/HomePage/SecMapa";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <SecMarcas />
       <SecCompara />
       <SecReviews />
+      {/* <SecMapa /> */}
       <SecContacto />
       <Foteer />
     </>

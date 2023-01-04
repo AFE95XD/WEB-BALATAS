@@ -15,7 +15,7 @@ const Nav = () => {
   return (
     <div className="fixed z-50 w-full">
       {/** <div> */}
-      <div className="flex h-10 items-center justify-center bg-[#FF9B16] px-4 text-base font-semibolds text-white sm:px-6 lg:px-8 font-openSans">
+      <div className="flex h-10 items-center justify-center bg-[#FF9B16] px-4 lg:text-base text-xs sm:text-sm font-semibold text-white sm:px-6 lg:px-8 font-openSans">
         Llámanos: ​​(722) 238 5244, (722) 705 9029, (722) 471 1254
       </div>
       <Disclosure as="nav" className="bg-white fixed z-40 w-full">
@@ -69,7 +69,7 @@ const Nav = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                {/* <div className="hidden sm:ml-6 sm:block">
                   <Link
                     to="/registro"
                     className="rounded-md px-3 py-2 text-base font-semibold text-black mr-2 hover:bg-[#FF9B16] hover:text-white font-openSans"
@@ -82,7 +82,7 @@ const Nav = () => {
                   >
                     Iniciar Sesión
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="-mr-2 flex sm:hidden">
                   {/* Mobile menu button */}
@@ -130,7 +130,7 @@ const Nav = () => {
                 >
                   Blog
                 </Disclosure.Button>
-                <Disclosure.Button
+                {/* <Disclosure.Button
                   as="a"
                   onClick={(e) => direccionarNavMoblie(e, "productos")}
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-700 hover:text-white"
@@ -143,7 +143,7 @@ const Nav = () => {
                   className="block rounded-md px-3 py-2 text-base font-medium text-white bg-[#FF9B16] hover:bg-gray-700 hover:text-white text-center"
                 >
                   Iniciar Sesión
-                </Disclosure.Button>
+                </Disclosure.Button> */}
               </div>
             </Disclosure.Panel>
           </>

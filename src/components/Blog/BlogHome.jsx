@@ -67,45 +67,47 @@ const cards = [
 const BlogHome = () => {
   return (
     <>
-      <section class="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
-        <div class="container">
+      <section className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
+        <div className="container">
           {/* Titulo */}
-          <div class="flex flex-wrap justify-center -mx-4">
-            <div class="w-full px-4">
-              <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                <span class="font-semibold text-lg text-[#3056d3] mb-2 block">
+          <div className="flex flex-wrap justify-center -mx-4">
+            <div className="w-full px-4">
+              <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+                <span className="font-semibold text-lg text-[#3056d3] mb-2 block">
                   Nuestro Blog
                 </span>
-                <h2 class="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4">
+                <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4">
                   Publicaciones Recientes
                 </h2>
-                <p class="text-base text-[#637381]">
+                <p className="text-base text-[#637381]">
                   There are many variations of passages of Lorem Ipsum available
                   but the majority have suffered alteration in some form.
                 </p>
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap -mx-4">
             {cards.map((card) => (
-              <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-                <div class="max-w-[370px] mx-auto mb-10 shadow-xl rounded-b-md">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img src={card.href} alt="image" class="w-full" />
+              <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+                <div className="max-w-[370px] mx-auto mb-10 shadow-xl rounded-b-md">
+                  <div className="rounded-t-md overflow-hidden">
+                    <img src={card.href} alt="image" className="w-full" />
                   </div>
                   <div className="p-6">
-                    <span class="bg-[#3056d3] rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
+                    <span className="bg-[#3056d3] rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
                       {card.fecha}
                     </span>
                     <h3>
                       <a
                         href="#"
-                        class="font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-[#090e34] hover:text-[#3056d3]"
+                        className="font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-[#090e34] hover:text-[#3056d3]"
                       >
                         {card.titulo}
                       </a>
                     </h3>
-                    <p class="text-base text-[#637381]">{card.descripcion}</p>
+                    <p className="text-base text-[#637381]">
+                      {card.descripcion}
+                    </p>
                   </div>
                 </div>
               </div>
