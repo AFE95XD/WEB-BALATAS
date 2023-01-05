@@ -4,11 +4,11 @@ const SecInfo = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 pt-32 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="justify-self-center">
+        <div className="justify-center">
           <img
             src="src/assets/img/mechanic.jpg"
             alt="imgInfo"
-            className="h-2/3"
+            className="w-4/5"
           />
         </div>
         <div>
