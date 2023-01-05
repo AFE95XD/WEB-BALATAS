@@ -1,7 +1,7 @@
 import {
   LifebuoyIcon,
   WrenchScrewdriverIcon,
-  TruckIcon,
+  CreditCardIcon,
 } from "@heroicons/react/24/outline";
 
 const supportLinks = [
@@ -24,7 +24,7 @@ const supportLinks = [
     href: "#",
     description:
       "Ofrecemos una amplia gama de opciones de pago para adaptarnos a sus necesidades.",
-    icon: TruckIcon,
+    icon: CreditCardIcon,
   },
 ];
 

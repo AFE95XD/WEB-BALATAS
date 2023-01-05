@@ -6,8 +6,9 @@ const SecInfo = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="justify-self-center">
           <img
-            src="https://demo.themexbd.com/html/hackery/assets/images/about.jpg"
+            src="src/assets/img/mechanic.jpg"
             alt="imgInfo"
+            className="h-2/3"
           />
         </div>
         <div>

@@ -16,8 +16,24 @@ const SecCompara = () => {
       <div style={{ width: "100vw", height: "80vh" }}>
         {/* aksjhdkjashdkjh */}
         <ReactCompareSlider
-          itemOne={<ReactCompareSliderImage src={Antes} alt="Imagen 1" />}
-          itemTwo={<ReactCompareSliderImage src={Despues} alt="Imagen 2" />}
+          itemOne={
+            <ReactCompareSliderImage
+              src={Antes}
+              alt="Imagen 1"
+              // style={styleFitContainer({
+              //   objectFit: "contain",
+              // })}
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              src={Despues}
+              alt="Imagen 2"
+              // style={styleFitContainer({
+              //   objectFit: "contain",
+              // })}
+            />
+          }
           style={styleFitContainer({
             objectFit: "contain",
             objectPosition: "center",
