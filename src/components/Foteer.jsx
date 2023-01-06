@@ -1,27 +1,76 @@
+import { RModalImages } from "react-modal-images";
+
 const navigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
+  blog: [
+    {
+      id: 1,
+      titulo: "Mechanic’s Overblown Advice Is 50",
+      href: "#",
+      fecha: "September 04, 2021",
+      image: "src/assets/img/blog-01.jpg",
+    },
+    {
+      id: 2,
+      titulo: "Give Your Small Car the Horn It Deserves",
+      href: "#",
+      fecha: "September 05, 2021",
+      image: "src/assets/img/blog-02.jpg",
+    },
+    {
+      id: 3,
+      titulo: "How Much Does a Website Cost to Build?",
+      href: "#",
+      fecha: "September 06, 2021",
+      image: "src/assets/img/blog-03.jpg",
+    },
   ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+  imagenes: [
+    {
+      small: "src/assets/img/blog-01.jpg",
+      medium: "src/assets/img/blog-01.jpg",
+      alt: "An alternate text for this image1",
+    },
+    {
+      small: "src/assets/img/blog-02.jpg",
+      medium: "src/assets/img/blog-02.jpg",
+      alt: "An alternate text for this image2",
+    },
+    {
+      small: "src/assets/img/blog-03.jpg",
+      medium: "src/assets/img/blog-03.jpg",
+      alt: "An alternate text for this image3",
+    },
+    {
+      small: "src/assets/img/blog-04.jpg",
+      medium: "src/assets/img/blog-04.jpg",
+      alt: "An alternate text for this image4",
+    },
+    {
+      small: "src/assets/img/blog-05.jpg",
+      medium: "src/assets/img/blog-05.jpg",
+      alt: "An alternate text for this image5",
+    },
+    {
+      small: "src/assets/img/blog-06.jpg",
+      medium: "src/assets/img/blog-06.jpg",
+      alt: "An alternate text for this image6",
+    },
+    {
+      small: "src/assets/img/blog-07.jpg",
+      medium: "src/assets/img/blog-07.jpg",
+      alt: "An alternate text for this image7",
+    },
+    {
+      small: "src/assets/img/blog-08.jpg",
+      medium: "src/assets/img/blog-08.jpg",
+      alt: "An alternate text for this image8",
+    },
+    {
+      small: "src/assets/img/blog-09.jpg",
+      medium: "src/assets/img/blog-09.jpg",
+      alt: "An alternate text for this image9",
+    },
   ],
-  // company: [
-  //   { name: "About", href: "#" },
-  //   { name: "Blog", href: "#" },
-  //   { name: "Jobs", href: "#" },
-  //   { name: "Press", href: "#" },
-  //   { name: "Partners", href: "#" },
-  // ],
-  // legal: [
-  //   { name: "Claim", href: "#" },
-  //   { name: "Privacy", href: "#" },
-  //   { name: "Terms", href: "#" },
-  // ],
   social: [
     {
       name: "Facebook",
@@ -72,7 +121,6 @@ const Foteer = () => {
           <div className="space-y-8 xl:col-span-1">
             <img
               className="h-14"
-              // src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300"
               src="src/assets/img/logo.webp"
               alt="PremiumBreaks"
             />
@@ -96,27 +144,19 @@ const Foteer = () => {
               ))}
             </div>
           </div>
-          {/* <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0"> */}
-          {/* <div className="mt-6 md:grid md:grid-cols-2 md:gap-8 md:mt-8"> */}
           <div>
             <h3 className="text-base font-medium text-gray-900">
               Posts Recientes
             </h3>
             <ul role="list" className="mt-4 space-y-4">
-              {navigation.solutions.map((item) => (
-                // <li key={item.name}>
-                //   <a
-                //     href={item.href}
-                //     className="text-base text-gray-500 hover:text-gray-900"
-                //   >
-                //     {item.name}
-                //   </a>
-                // </li>
-                <div className="flex gap-4">
-                  <div className="w-36 h-24 bg-green-400 "></div>
-                  <div className="bg-red-500 flex flex-col justify-between p-2">
-                    <p>Mechanic’s Overblown Advice Is 50</p>
-                    <p>September 04, 2021</p>
+              {navigation.blog.map((item) => (
+                <div className="flex gap-1" key={item.id}>
+                  <div className="w-36 h-24 basis-60">
+                    <img src={item.image} alt="imgBlog" className="h-full" />
+                  </div>
+                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full">
+                    <p>{item.titulo}</p>
+                    <span>{item.fecha}</span>
                   </div>
                 </div>
               ))}
@@ -124,64 +164,21 @@ const Foteer = () => {
           </div>
           <div className="mt-12 md:mt-0">
             <h3 className="text-base font-medium text-gray-900">Support</h3>
-            {/* <ul role="list" className="mt-4 space-y-4">
-              {navigation.support.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="text-base text-gray-500 hover:text-gray-900"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul> */}
             <div className="mt-4 grid grid-cols-3 gap-y-4 gap-x-7">
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
-              <div className="w-full h-24 bg-green-400"></div>
+              {navigation.imagenes.map((item) => (
+                <RModalImages
+                  className={"w-full h-24 object-cover"}
+                  hideDownloadButton={true}
+                  hideRotateButton={true}
+                  hideZoomButton={true}
+                  small={item.small}
+                  medium={item.medium}
+                  // large={"https://dummyimage.com/1020x800/000/aaa"}
+                  //   alt={item.alt}
+                />
+              ))}
             </div>
           </div>
-          {/* </div> */}
-          {/* <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-medium text-gray-900">Company</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-medium text-gray-900">Legal</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div> */}
-          {/* </div> */}
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
