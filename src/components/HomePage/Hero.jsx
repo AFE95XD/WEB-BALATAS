@@ -12,7 +12,7 @@ const Hero = () => {
       loop={true}
       autoplay={{ delay: 5000, disableOnInteraction: false }}
       tag="section"
-      className="pt-[6.5rem]"
+      className="pt-[7.5rem]"
     >
       <SwiperSlide>
         <div className="relative flex justify-center items-center lg:justify-start lg:items-center">

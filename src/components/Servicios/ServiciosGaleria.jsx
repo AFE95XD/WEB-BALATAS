@@ -110,86 +110,31 @@ const navigation = {
   ],
 };
 
-const Foteer = () => {
+const ServiciosGaleria = () => {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 xl:col-span-1">
-            <img
-              className="h-14"
-              src="src/assets/img/logo.png"
-              alt="PremiumBreaks"
+    <section className="w-full bg-slate-100">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto text-center">
+          Galeria
+        </h2>
+        {/* Cards */}
+        <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-8 lg:gap-x-8">
+          {navigation.imagenes.map((item) => (
+            <RModalImages
+              className={"w-full h-full object-cover"}
+              hideDownloadButton={true}
+              hideRotateButton={true}
+              hideZoomButton={true}
+              small={item.small}
+              medium={item.medium}
+              // large={"https://dummyimage.com/1020x800/000/aaa"}
+              alt={item.alt}
             />
-            <p className="text-base text-gray-500">
-              La solución integral para la reparación de sistemas de freno
-              automotrices, ofrecemos productos de las mejores marcas
-              disponibles en el mercado, con la cobertura más amplia y
-              disponibilidad en el momento en que lo necesitas al precio más
-              competitivo.
-            </p>
-            <div className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-400 hover:text-[#FF9B16]"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="text-base font-medium text-gray-900">
-              Posts Recientes
-            </h3>
-            <ul role="list" className="mt-4 space-y-4">
-              {navigation.blog.map((item) => (
-                <div className="flex gap-1" key={item.id}>
-                  <div className="w-36 h-24 basis-60">
-                    <img src={item.image} alt="imgBlog" className="h-full" />
-                  </div>
-                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full">
-                    <p>{item.titulo}</p>
-                    <span>{item.fecha}</span>
-                  </div>
-                </div>
-              ))}
-            </ul>
-          </div>
-          <div className="mt-12 md:mt-0">
-            <h3 className="text-base font-medium text-gray-900">Support</h3>
-            <div className="mt-4 grid grid-cols-3 gap-y-4 gap-x-7">
-              {navigation.imagenes.map((item, i) => (
-                <div key={i}>
-                  <RModalImages
-                    className={"w-full h-24 object-cover"}
-                    hideDownloadButton={true}
-                    hideRotateButton={true}
-                    hideZoomButton={true}
-                    small={item.small}
-                    medium={item.medium}
-                    // large={"https://dummyimage.com/1020x800/000/aaa"}
-                    alt={item.alt}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2023 Premium Brakes, Inc. Todos los derechos reservados.
-          </p>
+          ))}
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 
-export default Foteer;
+export default ServiciosGaleria;

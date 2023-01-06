@@ -23,19 +23,19 @@ const Nav = () => {
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="flex h-16 items-center justify-between">
+              <div className="flex h-20 items-center justify-between">
                 {/* ESTE ES EL DIN DEL LOGO */}
                 <div className="flex-shrink-0">
                   <img
                     className="block h-12 w-auto lg:hidden"
                     // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="src/assets/img/logo.webp"
+                    src="src/assets/img/logo.png"
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-12 w-auto lg:block"
+                    className="hidden h-16 w-auto lg:block"
                     // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="src/assets/img/logo.webp"
+                    src="src/assets/img/logo.png"
                     alt="Your Company"
                   />
                 </div>
@@ -55,12 +55,12 @@ const Nav = () => {
                     >
                       Servicios
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/productos"
                       className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#FF9B16] hover:text-white font-openSans"
                     >
                       Productos
-                    </Link>
+                    </Link> */}
                     <Link
                       to="/blog"
                       className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#FF9B16] hover:text-white font-openSans"
@@ -116,13 +116,13 @@ const Nav = () => {
                 >
                   Servicios
                 </Disclosure.Button>
-                <Disclosure.Button
+                {/* <Disclosure.Button
                   as="a"
                   onClick={(e) => direccionarNavMoblie(e, "productos")}
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-700 hover:text-white"
                 >
                   Productos
-                </Disclosure.Button>
+                </Disclosure.Button> */}
                 <Disclosure.Button
                   as="a"
                   onClick={(e) => direccionarNavMoblie(e, "blog")}
