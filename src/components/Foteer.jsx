@@ -7,67 +7,67 @@ const navigation = {
       titulo: "Mechanic’s Overblown Advice Is 50",
       href: "#",
       fecha: "September 04, 2021",
-      image: "src/assets/img/blog-01.jpg",
+      image: "/assets/img/blog-01.jpg",
     },
     {
       id: 2,
       titulo: "Give Your Small Car the Horn It Deserves",
       href: "#",
       fecha: "September 05, 2021",
-      image: "src/assets/img/blog-02.jpg",
+      image: "/assets/img/blog-02.jpg",
     },
     {
       id: 3,
       titulo: "How Much Does a Website Cost to Build?",
       href: "#",
       fecha: "September 06, 2021",
-      image: "src/assets/img/blog-03.jpg",
+      image: "/assets/img/blog-03.jpg",
     },
   ],
   imagenes: [
     {
-      small: "src/assets/img/blog-01.jpg",
-      medium: "src/assets/img/blog-01.jpg",
+      small: "/assets/img/blog-01.jpg",
+      medium: "/assets/img/blog-01.jpg",
       alt: "An alternate text for this image1",
     },
     {
-      small: "src/assets/img/blog-02.jpg",
-      medium: "src/assets/img/blog-02.jpg",
+      small: "/assets/img/blog-02.jpg",
+      medium: "/assets/img/blog-02.jpg",
       alt: "An alternate text for this image2",
     },
     {
-      small: "src/assets/img/blog-03.jpg",
-      medium: "src/assets/img/blog-03.jpg",
+      small: "/assets/img/blog-03.jpg",
+      medium: "/assets/img/blog-03.jpg",
       alt: "An alternate text for this image3",
     },
     {
-      small: "src/assets/img/blog-04.jpg",
+      small: "/assets/img/blog-04.jpg",
       medium: "src/assets/img/blog-04.jpg",
       alt: "An alternate text for this image4",
     },
     {
-      small: "src/assets/img/blog-05.jpg",
-      medium: "src/assets/img/blog-05.jpg",
+      small: "/assets/img/blog-05.jpg",
+      medium: "/assets/img/blog-05.jpg",
       alt: "An alternate text for this image5",
     },
     {
-      small: "src/assets/img/blog-06.jpg",
-      medium: "src/assets/img/blog-06.jpg",
+      small: "/assets/img/blog-06.jpg",
+      medium: "/assets/img/blog-06.jpg",
       alt: "An alternate text for this image6",
     },
     {
-      small: "src/assets/img/blog-07.jpg",
-      medium: "src/assets/img/blog-07.jpg",
+      small: "/assets/img/blog-07.jpg",
+      medium: "/assets/img/blog-07.jpg",
       alt: "An alternate text for this image7",
     },
     {
-      small: "src/assets/img/blog-08.jpg",
-      medium: "src/assets/img/blog-08.jpg",
+      small: "/assets/img/blog-08.jpg",
+      medium: "/assets/img/blog-08.jpg",
       alt: "An alternate text for this image8",
     },
     {
-      small: "src/assets/img/blog-09.jpg",
-      medium: "src/assets/img/blog-09.jpg",
+      small: "/assets/img/blog-09.jpg",
+      medium: "/assets/img/blog-09.jpg",
       alt: "An alternate text for this image9",
     },
   ],
@@ -121,10 +121,10 @@ const Foteer = () => {
           <div className="space-y-8 xl:col-span-1">
             <img
               className="h-14"
-              src="src/assets/img/logo.png"
+              src="/assets/img/logo.png"
               alt="PremiumBreaks"
             />
-            <p className="text-base text-gray-500">
+            <p className="text-base text-gray-500 font-openSans">
               La solución integral para la reparación de sistemas de freno
               automotrices, ofrecemos productos de las mejores marcas
               disponibles en el mercado, con la cobertura más amplia y
@@ -136,7 +136,7 @@ const Foteer = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-[#FF9B16]"
+                  className="text-gray-400 hover:text-[#FF9B16] border p-1 rounded"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -145,7 +145,7 @@ const Foteer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-base font-medium text-gray-900">
+            <h3 className="text-base font-medium text-gray-900 font-roboto">
               Posts Recientes
             </h3>
             <ul role="list" className="mt-4 space-y-4">
@@ -154,7 +154,7 @@ const Foteer = () => {
                   <div className="w-36 h-24 basis-60">
                     <img src={item.image} alt="imgBlog" className="h-full" />
                   </div>
-                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full">
+                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full text-base">
                     <p>{item.titulo}</p>
                     <span>{item.fecha}</span>
                   </div>
@@ -163,7 +163,9 @@ const Foteer = () => {
             </ul>
           </div>
           <div className="mt-12 md:mt-0">
-            <h3 className="text-base font-medium text-gray-900">Support</h3>
+            <h3 className="text-base font-medium text-gray-900 font-roboto">
+              Galeria
+            </h3>
             <div className="mt-4 grid grid-cols-3 gap-y-4 gap-x-7">
               {navigation.imagenes.map((item, i) => (
                 <div key={i}>
@@ -183,7 +185,7 @@ const Foteer = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">
+          <p className="text-base text-gray-400 xl:text-center font-openSans">
             &copy; 2023 Premium Brakes, Inc. Todos los derechos reservados.
           </p>
         </div>

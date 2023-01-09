@@ -29,13 +29,13 @@ const Nav = () => {
                   <img
                     className="block h-12 w-auto lg:hidden"
                     // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="src/assets/img/logo.png"
+                    src="/assets/img/logo.png"
                     alt="Your Company"
                   />
                   <img
                     className="hidden h-16 w-auto lg:block"
                     // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="src/assets/img/logo.png"
+                    src="/assets/img/logo.png"
                     alt="Your Company"
                   />
                 </div>
@@ -105,14 +105,14 @@ const Nav = () => {
                 <Disclosure.Button
                   as="a"
                   onClick={(e) => direccionarNavMoblie(e, "inicio")}
-                  className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                  className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white font-openSans"
                 >
                   Inicio
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
                   onClick={(e) => direccionarNavMoblie(e, "servicios")}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-700 hover:text-white"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-700 hover:text-white font-openSans"
                 >
                   Servicios
                 </Disclosure.Button>
@@ -126,7 +126,7 @@ const Nav = () => {
                 <Disclosure.Button
                   as="a"
                   onClick={(e) => direccionarNavMoblie(e, "blog")}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-700 hover:text-white"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-700 hover:text-white font-openSans"
                 >
                   Blog
                 </Disclosure.Button>

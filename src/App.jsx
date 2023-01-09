@@ -5,6 +5,7 @@ import Productos from "./pages/public/Productos";
 import LogIn from "./pages/public/LogIn";
 import SignIn from "./pages/public/SignIn";
 import Blog from "./pages/public/Blog";
+import BlogPost from "./pages/public/BlogPost";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="servicios" element={<Servicios />} />
           <Route path="productos" element={<Productos />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/:title" element={<BlogPost />} />
         </Route>
         {/* PRIVADAS */}
       </Routes>

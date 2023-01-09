@@ -7,8 +7,8 @@ import {
 import React from "react";
 // import Antes from "../../assets/img/FrenosAntes.jpg";
 // import Despues from "../../assets/img/FrenosDespues.jpg";
-import Antes from "../../assets/img/Antes.jpg";
-import Despues from "../../assets/img/Despues.jpg";
+import Antes from "/assets/img/Antes.jpg";
+import Despues from "/assets/img/Despues.jpg";
 
 const SecCompara = () => {
   return (

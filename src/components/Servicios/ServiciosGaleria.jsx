@@ -7,67 +7,67 @@ const navigation = {
       titulo: "Mechanic’s Overblown Advice Is 50",
       href: "#",
       fecha: "September 04, 2021",
-      image: "src/assets/img/blog-01.jpg",
+      image: "/assets/img/blog-01.jpg",
     },
     {
       id: 2,
       titulo: "Give Your Small Car the Horn It Deserves",
       href: "#",
       fecha: "September 05, 2021",
-      image: "src/assets/img/blog-02.jpg",
+      image: "/assets/img/blog-02.jpg",
     },
     {
       id: 3,
       titulo: "How Much Does a Website Cost to Build?",
       href: "#",
       fecha: "September 06, 2021",
-      image: "src/assets/img/blog-03.jpg",
+      image: "/assets/img/blog-03.jpg",
     },
   ],
   imagenes: [
     {
-      small: "src/assets/img/blog-01.jpg",
-      medium: "src/assets/img/blog-01.jpg",
+      small: "/assets/img/blog-01.jpg",
+      medium: "/assets/img/blog-01.jpg",
       alt: "An alternate text for this image1",
     },
     {
-      small: "src/assets/img/blog-02.jpg",
-      medium: "src/assets/img/blog-02.jpg",
+      small: "/assets/img/blog-02.jpg",
+      medium: "/assets/img/blog-02.jpg",
       alt: "An alternate text for this image2",
     },
     {
-      small: "src/assets/img/blog-03.jpg",
-      medium: "src/assets/img/blog-03.jpg",
+      small: "/assets/img/blog-03.jpg",
+      medium: "/assets/img/blog-03.jpg",
       alt: "An alternate text for this image3",
     },
     {
-      small: "src/assets/img/blog-04.jpg",
-      medium: "src/assets/img/blog-04.jpg",
+      small: "/assets/img/blog-04.jpg",
+      medium: "/assets/img/blog-04.jpg",
       alt: "An alternate text for this image4",
     },
     {
-      small: "src/assets/img/blog-05.jpg",
-      medium: "src/assets/img/blog-05.jpg",
+      small: "/assets/img/blog-05.jpg",
+      medium: "/assets/img/blog-05.jpg",
       alt: "An alternate text for this image5",
     },
     {
-      small: "src/assets/img/blog-06.jpg",
-      medium: "src/assets/img/blog-06.jpg",
+      small: "/assets/img/blog-06.jpg",
+      medium: "/assets/img/blog-06.jpg",
       alt: "An alternate text for this image6",
     },
     {
-      small: "src/assets/img/blog-07.jpg",
-      medium: "src/assets/img/blog-07.jpg",
+      small: "/assets/img/blog-07.jpg",
+      medium: "/assets/img/blog-07.jpg",
       alt: "An alternate text for this image7",
     },
     {
-      small: "src/assets/img/blog-08.jpg",
-      medium: "src/assets/img/blog-08.jpg",
+      small: "/assets/img/blog-08.jpg",
+      medium: "/assets/img/blog-08.jpg",
       alt: "An alternate text for this image8",
     },
     {
-      small: "src/assets/img/blog-09.jpg",
-      medium: "src/assets/img/blog-09.jpg",
+      small: "/assets/img/blog-09.jpg",
+      medium: "/assets/img/blog-09.jpg",
       alt: "An alternate text for this image9",
     },
   ],
@@ -119,17 +119,19 @@ const ServiciosGaleria = () => {
         </h2>
         {/* Cards */}
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-8 lg:gap-x-8">
-          {navigation.imagenes.map((item) => (
-            <RModalImages
-              className={"w-full h-full object-cover"}
-              hideDownloadButton={true}
-              hideRotateButton={true}
-              hideZoomButton={true}
-              small={item.small}
-              medium={item.medium}
-              // large={"https://dummyimage.com/1020x800/000/aaa"}
-              alt={item.alt}
-            />
+          {navigation.imagenes.map((item, i) => (
+            <div key={i}>
+              <RModalImages
+                className={"w-full h-full object-cover"}
+                hideDownloadButton={true}
+                hideRotateButton={true}
+                hideZoomButton={true}
+                small={item.small}
+                medium={item.medium}
+                // large={"https://dummyimage.com/1020x800/000/aaa"}
+                alt={item.alt}
+              />
+            </div>
           ))}
         </div>
       </div>

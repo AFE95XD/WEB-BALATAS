@@ -10,7 +10,7 @@ const ServiciosHeader = () => {
     <section className="bg-orange-600 pt-[7.5rem]">
       <div className="flex justify-center items-center">
         <img
-          src="src\assets\img\contactReparacion.jpg"
+          src="\assets\img\contactReparacion.jpg"
           alt="banerRep"
           className="w-full object-cover h-60 object-center"
         />

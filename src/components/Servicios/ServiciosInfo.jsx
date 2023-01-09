@@ -58,14 +58,14 @@ const ServiciosInfo = () => {
           <div className="w-full px-4">
             <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
               <span className="font-semibold text-lg text-[#FF9B16] mb-2 block font-openSans">
-                Nuestro Blog
+                Nuestros Servicios
               </span>
               <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto">
-                Publicaciones Recientes
+                Calidad de Servicio
               </h2>
-              <p className="text-base text-[#637381]">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+              <p className="text-base text-[#637381] font-openSans">
+                Contamos con asesoría técnica especializada, venta al público y
+                servicio a domicilio.
               </p>
             </div>
           </div>
@@ -84,9 +84,11 @@ const ServiciosInfo = () => {
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
+              <h3 className="text-xl font-medium text-gray-900 font-roboto">
+                {link.name}
+              </h3>
 
-              <p className="mt-4 text-base text-gray-600 text-justify">
+              <p className="mt-4 text-base text-gray-600 text-justify font-openSans">
                 {link.description}
               </p>
               {/* </div> */}

@@ -5,11 +5,7 @@ const SecInfo = () => {
     <section className="mx-auto max-w-7xl px-4 pt-32 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="justify-center">
-          <img
-            src="src/assets/img/mechanic.jpg"
-            alt="imgInfo"
-            className="w-4/5"
-          />
+          <img src="/assets/img/mechanic.jpg" alt="imgInfo" className="w-4/5" />
         </div>
         <div>
           <h2 className="text-center text-4xl font-bold text-gray-900 py-4">
