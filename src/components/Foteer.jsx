@@ -136,7 +136,7 @@ const Foteer = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-[#FF9B16] border p-1 rounded"
+                  className="text-gray-400 hover:text-[#FF9B16] border p-1 rounded hover:border-[#FF9B16]"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -154,7 +154,7 @@ const Foteer = () => {
                   <div className="w-36 h-24 basis-60">
                     <img src={item.image} alt="imgBlog" className="h-full" />
                   </div>
-                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full text-base">
+                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full text-base font-openSans">
                     <p>{item.titulo}</p>
                     <span>{item.fecha}</span>
                   </div>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const cards = [
   {
+    url: "Tipos-de-balatas-y-sus-ventajas-y-desventajas",
     image: "/assets/img/blogGrid1.jpg",
     titulo: "Tipos de balatas y sus ventajas y desventajas.",
     fecha: "Dec 22, 2023",
@@ -9,6 +10,7 @@ const cards = [
       "Al principio no se pude distinguir balatas de buena o mala calidad, por eso es importante adquirir una marca que cuente con pruebas de seguridad...",
   },
   {
+    url: "Como-funcionan-los-frenos-de-disco-y-de-tambor",
     image: "/assets/img/blogGrid2.jpg",
     titulo: "Cómo funcionan los frenos de disco y de tambor",
     fecha: "Mar 15, 2023",
@@ -39,10 +41,10 @@ const BlogHome = () => {
                 <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto">
                   Publicaciones Recientes
                 </h2>
-                <p className="text-base text-[#637381]">
-                  Bienvenido a Premium Brakes, en este sitio encontraras
-                  información a balatas y su funcionamiento así como temas
-                  relacionados a los sistemas de frenos completos.
+                <p className="text-base text-[#637381] font-openSans">
+                  Bienvenido al blog de Premium Brakes, en este sitio
+                  encontraras información a balatas y su funcionamiento así como
+                  temas relacionados a los sistemas de frenos completos.
                 </p>
               </div>
             </div>
@@ -73,7 +75,7 @@ const BlogHome = () => {
                     </p>
                     <div className="mt-2 block">
                       <Link
-                        to={"/blog/blogPost"}
+                        to={`/blog/${card.url}`}
                         className="text-xl font-semibold text-gray-900 hover:text-[#FF9B16]"
                         // onClick={<BlogPost />}
                       >

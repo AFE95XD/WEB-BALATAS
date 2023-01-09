@@ -23,9 +23,12 @@ const contenido = [
 const SecServiciosBaner = () => {
   return (
     <section className="bg-[#FF9B16]">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 flex justify-between items-center ">
+      <div className="grid sm:grid-cols-1 sm:gap-x-px md:grid-cols-3 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 justify-items-center">
         {contenido.map((item, i) => (
-          <div className="flex items-center content-center" key={i}>
+          <div
+            className="flex justify-items-center content-center flex-wrap"
+            key={i}
+          >
             <item.icono className="w-20 h-20 text-white pr-2" />
             <div className="w-80">
               <h3 className="font-roboto text-white font-bold text-xl pb-2">

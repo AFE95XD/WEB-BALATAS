@@ -36,7 +36,7 @@ export default function SecContacto() {
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
-            src="src/assets/img/contactReparacion.jpg"
+            src="/assets/img/contactReparacion.jpg"
             alt="imgContact"
           />
           <div
