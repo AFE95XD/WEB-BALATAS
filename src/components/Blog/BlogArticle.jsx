@@ -111,12 +111,14 @@ const BlogArticle = () => {
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
             {blog[0] &&
-              blog.map((el) => (
-                <>
+              blog.map((el, i) => (
+                <div key={i}>
                   {el.descripcion.map((item, i) => (
-                    <p className="pb-6">{item.parrafo1}</p>
+                    <p className="pb-6" key={i}>
+                      {item.parrafo1}
+                    </p>
                   ))}
-                </>
+                </div>
               ))}
 
             {/* <p className="pb-6">

@@ -6,6 +6,7 @@ import LogIn from "./pages/public/LogIn";
 import SignIn from "./pages/public/SignIn";
 import Blog from "./pages/public/Blog";
 import BlogPost from "./pages/public/BlogPost";
+import Pagina404 from "./pages/public/Pagina404";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="productos" element={<Productos />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:title" element={<BlogPost />} />
+          <Route path="pagina-no-encontrada" element={<Pagina404 />} />
         </Route>
         {/* PRIVADAS */}
       </Routes>

@@ -55,7 +55,7 @@ const Hero = () => {
               mejor producto.
             </p>
             <Link
-              to="/servicios"
+              to="/pagina-no-encontrada"
               className="rounded-md px-5 py-2.5 text-sm md:text-lg font-semibold font-openSans text-white bg-[#FF9B16] hover:bg-gray-900 flex-none lg:text-3xl"
             >
               Chat

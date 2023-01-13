@@ -10,6 +10,8 @@ const Nav = () => {
       navigate(`/${botton}`);
     } else if (botton === "inicio") {
       navigate(`/`);
+    } else if (botton === "blog") {
+      navigate(`/${botton}`);
     }
   };
   return (
