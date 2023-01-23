@@ -5,7 +5,7 @@ const cards = [
     url: "Tipos-de-balatas-y-sus-ventajas-y-desventajas",
     image: "/assets/img/blogGrid1.jpg",
     titulo: "Tipos de balatas y sus ventajas y desventajas.",
-    fecha: "Dec 22, 2023",
+    fecha: "Diciembre, 2022",
     descripcion:
       "Al principio no se pude distinguir balatas de buena o mala calidad, por eso es importante adquirir una marca que cuente con pruebas de seguridad...",
   },
@@ -13,14 +13,14 @@ const cards = [
     url: "Como-funcionan-los-frenos-de-disco-y-de-tambor",
     image: "/assets/img/blogGrid2.jpg",
     titulo: "Cómo funcionan los frenos de disco y de tambor",
-    fecha: "Mar 15, 2023",
+    fecha: "Enero, 2023",
     descripcion:
       "Los frenos de tambor funcionan según el mismo principio que los frenos de disco: dos elementos que actúan como componentes de fricción y un pistón...",
   },
   {
     image: "/assets/img/blogGrid3.jpg",
     titulo: "Cómo elegir el tipo de balatas adecuadas para tu auto.",
-    fecha: "Jan 05, 2023",
+    fecha: "Febrero, 2023",
     descripcion:
       "En primer instancia es necesario tener en consideración las diferencias entre los tipos de balata, al tener el conocimiento el usuarios podrá elegir...",
   },

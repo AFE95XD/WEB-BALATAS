@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <div className="fixed z-50 w-full">
       {/** <div> */}
-      <div className="flex h-10 items-center justify-center bg-[#FF9B16] px-4 lg:text-base text-xs sm:text-sm font-semibold text-white sm:px-6 lg:px-8 font-openSans">
+      <div className="flex h-10 items-center justify-center bg-[#DB2D2E] px-4 lg:text-base text-xs sm:text-sm font-semibold text-white sm:px-6 lg:px-8 font-openSans">
         Llámanos: ​​(722) 238 5244, (722) 705 9029, (722) 471 1254
       </div>
       <Disclosure as="nav" className="bg-white fixed z-40 w-full">
@@ -27,33 +27,35 @@ const Nav = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-20 items-center justify-between">
                 {/* ESTE ES EL DIN DEL LOGO */}
-                <div className="flex-shrink-0">
-                  <img
-                    className="block h-12 w-auto lg:hidden"
-                    // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="/assets/img/logo.png"
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden h-16 w-auto lg:block"
-                    // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="/assets/img/logo.png"
-                    alt="Your Company"
-                  />
-                </div>
+                <Link to="/">
+                  <div className="flex-shrink-0">
+                    <img
+                      className="block h-12 w-auto lg:hidden"
+                      // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                      src="/assets/img/Logo SM PB Rojo.png"
+                      alt="Your Company"
+                    />
+                    <img
+                      className="hidden h-16 w-auto lg:block"
+                      // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                      src="/assets/img/Logo SM PB Rojo.png"
+                      alt="Your Company"
+                    />
+                  </div>
+                </Link>
                 {/* DIV DEL MENU */}
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <Link
                       to="/"
-                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#FF9B16] hover:text-white font-openSans"
+                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#DB2D2E] hover:text-white font-openSans"
                     >
                       Inicio
                     </Link>
                     <Link
                       to="/servicios"
-                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#FF9B16] hover:text-white font-openSans"
+                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#DB2D2E] hover:text-white font-openSans"
                     >
                       Servicios
                     </Link>
@@ -65,7 +67,7 @@ const Nav = () => {
                     </Link> */}
                     <Link
                       to="/blog"
-                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#FF9B16] hover:text-white font-openSans"
+                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#DB2D2E] hover:text-white font-openSans"
                     >
                       Blog
                     </Link>
