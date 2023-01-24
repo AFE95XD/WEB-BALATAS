@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
             <Link
               to="/servicios"
-              className="rounded-md px-5 py-2.5 text-sm md:text-lg font-semibold font-openSans text-white bg-[#FF9B16] hover:bg-gray-900 flex-none lg:text-3xl"
+              className="rounded-md px-5 py-2.5 text-sm md:text-lg font-semibold font-openSans text-white bg-[#DB2D2E] hover:bg-gray-900 flex-none lg:text-3xl"
             >
               Servicio
             </Link>
@@ -56,7 +56,7 @@ const Hero = () => {
             </p>
             <Link
               to="/pagina-no-encontrada"
-              className="rounded-md px-5 py-2.5 text-sm md:text-lg font-semibold font-openSans text-white bg-[#FF9B16] hover:bg-gray-900 flex-none lg:text-3xl"
+              className="rounded-md px-5 py-2.5 text-sm md:text-lg font-semibold font-openSans text-white bg-[#DB2D2E] hover:bg-gray-900 flex-none lg:text-3xl"
             >
               Chat
             </Link>

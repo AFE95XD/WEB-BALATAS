@@ -35,7 +35,7 @@ const BlogHome = () => {
           <div className="flex flex-wrap justify-center -mx-4">
             <div className="w-full px-4">
               <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                <span className="font-semibold text-lg text-[#FF9B16] mb-2 block font-openSans">
+                <span className="font-semibold text-lg text-[#DB2D2E] mb-2 block font-openSans">
                   Nuestro Blog
                 </span>
                 <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto">
@@ -69,14 +69,14 @@ const BlogHome = () => {
                   {/* titulo y descripcion de la card */}
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
-                      <span className="inline-block bg-[#FF9B16] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                      <span className="inline-block bg-[#DB2D2E] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                         {card.fecha}
                       </span>
                     </p>
                     <div className="mt-2 block">
                       <Link
                         to={`/blog/${card.url}`}
-                        className="text-xl font-semibold text-gray-900 hover:text-[#FF9B16]"
+                        className="text-xl font-semibold text-gray-900 hover:text-[#DB2D2E]"
                         // onClick={<BlogPost />}
                       >
                         {card.titulo}

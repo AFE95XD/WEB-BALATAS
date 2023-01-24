@@ -40,7 +40,7 @@ const SecCards = () => {
             {/* <div className="relative flex-1 "> */}
             <div className="inline-block transform rounded-xl bg-white px-5 pb-5">
               <link.icon
-                className="h-10 w-10 text-[#FF9B16]"
+                className="h-10 w-10 text-[#DB2D2E]"
                 aria-hidden="true"
               />
             </div>

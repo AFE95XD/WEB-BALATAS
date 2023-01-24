@@ -15,10 +15,10 @@ const SecReviews = () => {
             />
           </div>
           <p className="text-xl my-4 text-gray-500">
-            "Lorem ipsum dolor sit amet eos adipisci, consectetur adipisicing
-            elit sed ut perspiciatis unde omnis."
+            "Acudí a este taller para reemplazar las balatas de mi coche y la
+            experiencia fue excelente."
           </p>
-          <p className="italic">- Anna Morian</p>
+          <p className="italic">- Adrian Cordero</p>
         </div>
         <div className="mb-0">
           <div className="flex justify-center mb-6">
@@ -28,10 +28,11 @@ const SecReviews = () => {
             />
           </div>
           <p className="text-xl my-4 text-gray-500">
-            "Neque cupiditate assumenda in maiores repudiandae mollitia
-            architecto elit sed adipiscing elit."
+            "El personal fue muy amable y servicial desde el primer momento, y
+            se aseguraron de que entendiera el proceso y los costos
+            involucrados."
           </p>
-          <p className="italic">- Teresa May</p>
+          <p className="italic">- Prisilla Gallardo</p>
         </div>
       </div>
     </section>

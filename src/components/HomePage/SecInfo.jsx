@@ -4,7 +4,7 @@ const SecInfo = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 pt-32 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="justify-center">
+        <div className="flex justify-center">
           <img src="/assets/img/mechanic.jpg" alt="imgInfo" className="w-4/5" />
         </div>
         <div>

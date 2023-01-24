@@ -1,7 +1,8 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 
 const pages = [
-  { name: "Servicios", href: "#", current: false },
+  { name: "Servicios", href: "/servicios", current: false },
   // { name: "Project Nero", href: "#", current: true },
 ];
 
@@ -23,13 +24,13 @@ const ServiciosHeader = () => {
             <ol role="list" className="flex items-center space-x-4">
               <li>
                 <div>
-                  <a href="#" className="text-white">
+                  <Link to={"/"} className="text-white">
                     <HomeIcon
                       className="h-6 w-6 flex-shrink-0"
                       aria-hidden="true"
                     />
                     <span className="sr-only">Home</span>
-                  </a>
+                  </Link>
                 </div>
               </li>
               {pages.map((page) => (
@@ -39,13 +40,13 @@ const ServiciosHeader = () => {
                       className="h-7 w-7 flex-shrink-0 text-white font-openSans"
                       aria-hidden="true"
                     />
-                    <a
-                      href={page.href}
+                    <Link
+                      to={page.href}
                       className="ml-4 font-medium text-white text-2xl font-openSans"
                       aria-current={page.current ? "page" : undefined}
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   </div>
                 </li>
               ))}

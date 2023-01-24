@@ -13,7 +13,7 @@ import Despues from "/assets/img/Despues.jpg";
 const SecCompara = () => {
   return (
     <section className="pt-32">
-      <div style={{ width: "100vw", height: "80vh" }}>
+      <div>
         {/* aksjhdkjashdkjh */}
         <ReactCompareSlider
           itemOne={

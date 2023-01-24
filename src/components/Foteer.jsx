@@ -1,4 +1,5 @@
 import { RModalImages } from "react-modal-images";
+import { Link } from "react-router-dom";
 
 const navigation = {
   blog: [
@@ -119,11 +120,13 @@ const Foteer = () => {
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <img
-              className="h-14"
-              src="/assets/img/logo.png"
-              alt="PremiumBreaks"
-            />
+            <Link to={"/"}>
+              <img
+                className="h-14"
+                src="/assets/img/Logo SM PB Rojo.png"
+                alt="PremiumBreaks"
+              />
+            </Link>
             <p className="text-base text-gray-500 font-openSans">
               La solución integral para la reparación de sistemas de freno
               automotrices, ofrecemos productos de las mejores marcas
@@ -136,7 +139,7 @@ const Foteer = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-[#FF9B16] border p-1 rounded hover:border-[#FF9B16]"
+                  className="text-gray-400 hover:text-[#DB2D2E] border p-1 rounded hover:border-[#DB2D2E]"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -144,7 +147,7 @@ const Foteer = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="mt-12 md:mt-0">
             <h3 className="text-base font-medium text-gray-900 font-roboto">
               Posts Recientes
             </h3>

@@ -71,7 +71,7 @@ export default function SecContacto() {
               className="flex flex-col bg-white rounded-2xl shadow-xl"
             >
               <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                <div className="absolute top-0 p-5 inline-block bg-[#FF9B16] rounded-xl shadow-lg transform -translate-y-1/2">
+                <div className="absolute top-0 p-5 inline-block bg-[#DB2D2E] rounded-xl shadow-lg transform -translate-y-1/2">
                   <link.icon
                     className="h-6 w-6 text-white"
                     aria-hidden="true"
@@ -87,7 +87,7 @@ export default function SecContacto() {
               <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
                 <a
                   href={link.href}
-                  className="text-base font-medium text-[#FF9B16] hover:text-[#FF9B16]"
+                  className="text-base font-medium text-[#DB2D2E] hover:text-[#DB2D2E]"
                 >
                   Comunicate<span aria-hidden="true"> &rarr;</span>
                 </a>

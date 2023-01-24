@@ -22,7 +22,7 @@ const contenido = [
 
 const SecServiciosBaner = () => {
   return (
-    <section className="w-full bg-[#FF9B16]">
+    <section className="w-full bg-[#DB2D2E]">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         {/* ESTE ES GRID */}
         {/* <div className="grid grid-cols-1 gap-y-20 md:grid-cols-3 md:gap-y-8 lg:gap-x-8"> */}

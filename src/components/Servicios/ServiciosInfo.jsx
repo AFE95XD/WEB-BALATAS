@@ -57,7 +57,7 @@ const ServiciosInfo = () => {
         <div className="flex flex-wrap justify-center -mx-4">
           <div className="w-full px-4">
             <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-              <span className="font-semibold text-lg text-[#FF9B16] mb-2 block font-openSans">
+              <span className="font-semibold text-lg text-[#DB2D2E] mb-2 block font-openSans">
                 Nuestros Servicios
               </span>
               <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto">
@@ -80,7 +80,7 @@ const ServiciosInfo = () => {
               {/* <div className="relative flex-1 "> */}
               <div className="inline-block transform rounded-xl bg-white px-5 pb-5">
                 <link.icon
-                  className="h-10 w-10 text-[#FF9B16]"
+                  className="h-10 w-10 text-[#DB2D2E]"
                   aria-hidden="true"
                 />
               </div>
