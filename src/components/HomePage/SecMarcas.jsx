@@ -5,7 +5,7 @@ import "swiper/css";
 const SecMarcas = () => {
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-gray-900 py-16">
+      <h2 className="text-center text-4xl font-bold text-white py-16">
         Marcas
       </h2>
       <div className="hidden lg:block">

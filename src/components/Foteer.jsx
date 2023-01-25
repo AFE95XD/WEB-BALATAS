@@ -113,7 +113,7 @@ const navigation = {
 
 const Foteer = () => {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="bg-[#181A1B]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -123,11 +123,11 @@ const Foteer = () => {
             <Link to={"/"}>
               <img
                 className="h-14"
-                src="/assets/img/Logo SM PB Rojo.png"
+                src="/assets/img/logo.png"
                 alt="PremiumBreaks"
               />
             </Link>
-            <p className="text-base text-gray-500 font-openSans">
+            <p className="text-base text-gray-400 font-openSans">
               La solución integral para la reparación de sistemas de freno
               automotrices, ofrecemos productos de las mejores marcas
               disponibles en el mercado, con la cobertura más amplia y
@@ -139,7 +139,7 @@ const Foteer = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-[#DB2D2E] border p-1 rounded hover:border-[#DB2D2E]"
+                  className="text-gray-500 hover:text-[#DB2D2E] border border-gray-500 p-1 rounded-lg hover:border-[#DB2D2E]"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -148,7 +148,7 @@ const Foteer = () => {
             </div>
           </div>
           <div className="mt-12 md:mt-0">
-            <h3 className="text-base font-medium text-gray-900 font-roboto">
+            <h3 className="text-base font-medium text-white font-roboto">
               Posts Recientes
             </h3>
             <ul role="list" className="mt-4 space-y-4">
@@ -157,16 +157,16 @@ const Foteer = () => {
                   <div className="w-36 h-24 basis-60">
                     <img src={item.image} alt="imgBlog" className="h-full" />
                   </div>
-                  <div className="bg-slate-100 flex flex-col justify-between p-2 basis-full text-base font-openSans">
-                    <p>{item.titulo}</p>
-                    <span>{item.fecha}</span>
+                  <div className="bg-[#1E2021] flex flex-col justify-between p-2 basis-full text-base font-openSans">
+                    <p className="text-white">{item.titulo}</p>
+                    <span className="text-white">{item.fecha}</span>
                   </div>
                 </div>
               ))}
             </ul>
           </div>
           <div className="mt-12 md:mt-0">
-            <h3 className="text-base font-medium text-gray-900 font-roboto">
+            <h3 className="text-base font-medium text-white font-roboto">
               Galeria
             </h3>
             <div className="mt-4 grid grid-cols-3 gap-y-4 gap-x-7">
@@ -187,7 +187,7 @@ const Foteer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
+        <div className="mt-12 border-t border-gray-600 pt-8">
           <p className="text-base text-gray-400 xl:text-center font-openSans">
             &copy; 2023 Premium Brakes, Inc. Todos los derechos reservados.
           </p>

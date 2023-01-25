@@ -102,7 +102,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      <Disclosure as="nav" className="bg-white fixed z-40 w-full">
+      <Disclosure as="nav" className="bg-[#181A1B] fixed z-40 w-full">
         {/* <Disclosure as="nav" className="bg-slate-500"> */}
         {({ open }) => (
           <>
@@ -114,13 +114,13 @@ const Nav = () => {
                     <img
                       className="block h-12 w-auto lg:hidden"
                       // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                      src="/assets/img/Logo SM PB Rojo.png"
+                      src="/assets/img/logo.png"
                       alt="Your Company"
                     />
                     <img
                       className="hidden h-16 w-auto lg:block"
                       // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                      src="/assets/img/Logo SM PB Rojo.png"
+                      src="/assets/img/logo.png"
                       alt="Your Company"
                     />
                   </div>
@@ -131,13 +131,13 @@ const Nav = () => {
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <Link
                       to="/"
-                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#DB2D2E] hover:text-white font-openSans"
+                      className="rounded-md px-3 py-2 text-base font-semibold text-white hover:bg-[#DB2D2E] font-openSans"
                     >
                       Inicio
                     </Link>
                     <Link
                       to="/servicios"
-                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#DB2D2E] hover:text-white font-openSans"
+                      className="rounded-md px-3 py-2 text-base font-semibold text-white hover:bg-[#DB2D2E] font-openSans"
                     >
                       Servicios
                     </Link>
@@ -149,7 +149,7 @@ const Nav = () => {
                     </Link> */}
                     <Link
                       to="/blog"
-                      className="rounded-md px-3 py-2 text-base font-semibold text-black hover:bg-[#DB2D2E] hover:text-white font-openSans"
+                      className="rounded-md px-3 py-2 text-base font-semibold text-white hover:bg-[#DB2D2E] font-openSans"
                     >
                       Blog
                     </Link>
