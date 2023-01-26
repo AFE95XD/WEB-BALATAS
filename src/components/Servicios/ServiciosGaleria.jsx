@@ -112,9 +112,9 @@ const navigation = {
 
 const ServiciosGaleria = () => {
   return (
-    <section className="w-full bg-slate-100">
+    <section className="w-full bg-[#1E2021]">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto text-center">
+        <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-white mb-4 font-roboto text-center">
           Galeria
         </h2>
         {/* Cards */}

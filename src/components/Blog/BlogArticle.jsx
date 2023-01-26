@@ -5,7 +5,7 @@ export const cards = [
     slug: "Tipos-de-balatas-y-sus-ventajas-y-desventajas", //este es el titulo de la url
     image: "/assets/img/blogGrid1.jpg",
     titulo: "Tipos de balatas y sus ventajas y desventajas.",
-    fecha: "Dec 22, 2023",
+    fecha: "Febrero, 2023",
     descripcion: [
       {
         parrafo1:
@@ -33,7 +33,7 @@ export const cards = [
     slug: "Como-funcionan-los-frenos-de-disco-y-de-tambor",
     image: "/assets/img/blogGrid2.jpg",
     titulo: "Cómo funcionan los frenos de disco y de tambor",
-    fecha: "Dec 22, 2023",
+    fecha: "Enero, 2023",
     descripcion: [
       {
         parrafo1:
@@ -61,9 +61,9 @@ export const cards = [
   },
   {
     slug: "Tipos-de-balatas-y-sus-ventajas-y-desventajas",
-    image: "src/assets/img/blogGrid3.jpg",
+    image: "/assets/img/blogGrid3.jpg",
     titulo: "Tipos de balatas y sus ventajas y desventajas.",
-    fecha: "Dec 22, 2023",
+    fecha: "Febrero, 2023",
     descripcion: [
       {
         parrafo1:

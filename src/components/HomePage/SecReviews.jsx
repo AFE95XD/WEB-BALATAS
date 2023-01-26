@@ -10,7 +10,7 @@ const SecReviews = () => {
         <div className="mb-6 md:mb-0">
           <div className="flex justify-center mb-6">
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(22).jpg"
+              src="/assets/img/usuario1.jpg"
               className="rounded-full shadow-lg w-24"
             />
           </div>
@@ -23,7 +23,7 @@ const SecReviews = () => {
         <div className="mb-0">
           <div className="flex justify-center mb-6">
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+              src="/assets/img/usuario2.jpeg"
               className="rounded-full shadow-lg w-24"
             />
           </div>

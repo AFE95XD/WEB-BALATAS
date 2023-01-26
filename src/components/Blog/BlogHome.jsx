@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const cards = [
   {
-    url: "Tipos-de-balatas-y-sus-ventajas-y-desventajas",
-    image: "/assets/img/blogGrid1.jpg",
-    titulo: "Tipos de balatas y sus ventajas y desventajas.",
-    fecha: "Diciembre, 2022",
+    url: "Como-elegir-el-tipo-de-balatas-adecuadas-para-tu-auto.",
+    image: "/assets/img/blogGrid3.jpg",
+    titulo: "Cómo elegir el tipo de balatas adecuadas para tu auto.",
+    fecha: "Febrero, 2023",
     descripcion:
-      "Al principio no se pude distinguir balatas de buena o mala calidad, por eso es importante adquirir una marca que cuente con pruebas de seguridad...",
+      "En primer instancia es necesario tener en consideración las diferencias entre los tipos de balata, al tener el conocimiento el usuarios podrá elegir...",
   },
   {
     url: "Como-funcionan-los-frenos-de-disco-y-de-tambor",
@@ -18,11 +18,12 @@ const cards = [
       "Los frenos de tambor funcionan según el mismo principio que los frenos de disco: dos elementos que actúan como componentes de fricción y un pistón...",
   },
   {
-    image: "/assets/img/blogGrid3.jpg",
-    titulo: "Cómo elegir el tipo de balatas adecuadas para tu auto.",
-    fecha: "Febrero, 2023",
+    url: "Tipos-de-balatas-y-sus-ventajas-y-desventajas",
+    image: "/assets/img/blogGrid1.jpg",
+    titulo: "Tipos de balatas y sus ventajas y desventajas.",
+    fecha: "Diciembre, 2022",
     descripcion:
-      "En primer instancia es necesario tener en consideración las diferencias entre los tipos de balata, al tener el conocimiento el usuarios podrá elegir...",
+      "Al principio no se pude distinguir balatas de buena o mala calidad, por eso es importante adquirir una marca que cuente con pruebas de seguridad...",
   },
 ];
 
@@ -38,10 +39,10 @@ const BlogHome = () => {
                 <span className="font-semibold text-lg text-[#DB2D2E] mb-2 block font-openSans">
                   Nuestro Blog
                 </span>
-                <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-[#090e34] mb-4 font-roboto">
+                <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-white mb-4 font-roboto">
                   Publicaciones Recientes
                 </h2>
-                <p className="text-base text-[#637381] font-openSans">
+                <p className="text-base text-gray-400 font-openSans">
                   Bienvenido al blog de Premium Brakes, en este sitio
                   encontraras información a balatas y su funcionamiento así como
                   temas relacionados a los sistemas de frenos completos.
@@ -53,7 +54,7 @@ const BlogHome = () => {
           <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-8 lg:gap-x-8">
             {cards.map((card, i) => (
               <div
-                className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+                className="flex flex-col overflow-hidden rounded-lg shadow-2xl"
                 key={i}
               >
                 {/* Este div es de la imagen */}
@@ -65,7 +66,7 @@ const BlogHome = () => {
                   />
                 </div>
                 {/* este div es del titulo y la descripcion el complemento de la card */}
-                <div className="flex flex-1 flex-col justify-between bg-white p-6">
+                <div className="flex flex-1 flex-col justify-between bg-[#181A1B] p-6">
                   {/* titulo y descripcion de la card */}
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
@@ -76,12 +77,12 @@ const BlogHome = () => {
                     <div className="mt-2 block">
                       <Link
                         to={`/blog/${card.url}`}
-                        className="text-xl font-semibold text-gray-900 hover:text-[#DB2D2E]"
+                        className="text-xl font-semibold text-white hover:text-[#DB2D2E]"
                         // onClick={<BlogPost />}
                       >
                         {card.titulo}
                       </Link>
-                      <p className="mt-3 text-base text-gray-500">
+                      <p className="mt-3 text-base text-gray-400">
                         {card.descripcion}
                       </p>
                     </div>

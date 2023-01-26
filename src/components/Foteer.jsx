@@ -1,30 +1,31 @@
 import { RModalImages } from "react-modal-images";
 import { Link } from "react-router-dom";
+import { cards } from "./Blog/BlogArticle";
 
 const navigation = {
-  blog: [
-    {
-      id: 1,
-      titulo: "Mechanic’s Overblown Advice Is 50",
-      href: "#",
-      fecha: "September 04, 2021",
-      image: "/assets/img/blog-01.jpg",
-    },
-    {
-      id: 2,
-      titulo: "Give Your Small Car the Horn It Deserves",
-      href: "#",
-      fecha: "September 05, 2021",
-      image: "/assets/img/blog-02.jpg",
-    },
-    {
-      id: 3,
-      titulo: "How Much Does a Website Cost to Build?",
-      href: "#",
-      fecha: "September 06, 2021",
-      image: "/assets/img/blog-03.jpg",
-    },
-  ],
+  // blog: [
+  //   {
+  //     id: 1,
+  //     titulo: "Mechanic’s Overblown Advice Is 50",
+  //     href: "#",
+  //     fecha: "September 04, 2021",
+  //     image: "/assets/img/blog-01.jpg",
+  //   },
+  //   {
+  //     id: 2,
+  //     titulo: "Give Your Small Car the Horn It Deserves",
+  //     href: "#",
+  //     fecha: "September 05, 2021",
+  //     image: "/assets/img/blog-02.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     titulo: "How Much Does a Website Cost to Build?",
+  //     href: "#",
+  //     fecha: "September 06, 2021",
+  //     image: "/assets/img/blog-03.jpg",
+  //   },
+  // ],
   imagenes: [
     {
       small: "/assets/img/blog-01.jpg",
@@ -152,13 +153,18 @@ const Foteer = () => {
               Posts Recientes
             </h3>
             <ul role="list" className="mt-4 space-y-4">
-              {navigation.blog.map((item) => (
-                <div className="flex gap-1" key={item.id}>
+              {cards.map((item) => (
+                <div className="flex gap-1" key={item.titulo}>
                   <div className="w-36 h-24 basis-60">
                     <img src={item.image} alt="imgBlog" className="h-full" />
                   </div>
                   <div className="bg-[#1E2021] flex flex-col justify-between p-2 basis-full text-base font-openSans">
-                    <p className="text-white">{item.titulo}</p>
+                    <Link
+                      to={`/blog/${cards.url}`}
+                      className="text-white hover:text-[#DB2D2E]"
+                    >
+                      <p>{item.titulo}</p>
+                    </Link>
                     <span className="text-white">{item.fecha}</span>
                   </div>
                 </div>

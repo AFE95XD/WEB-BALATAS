@@ -80,7 +80,7 @@ const Nav = () => {
       <div className="h-10 bg-[#DB2D2E] px-4 lg:text-base text-xs sm:text-sm font-semibold text-white sm:px-6 lg:px-8 font-openSans">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex h-full">
-            <div className="flex basis-4/5">
+            <div className="hidden lg:flex lg:basis-4/5">
               {cabecera.map((item, i) => (
                 <div className="flex justify-center items-center mr-6" key={i}>
                   <item.icono
@@ -90,6 +90,12 @@ const Nav = () => {
                   <p className="text-sm font-openSans pl-2">{item.texto}</p>
                 </div>
               ))}
+            </div>
+            <div className="flex basis-4/5 justify-center items-center lg:hidden">
+              <PhoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
+              <p className="text-sm font-openSans pl-2">
+                (722) 238 5244, (722) 705 9029, (722) 471 1254
+              </p>
             </div>
             <div className="flex basis-1/4 justify-end items-center">
               {social.map((item) => (
