@@ -1,10 +1,27 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+
+import {
+  add,
+  eachDayOfInterval,
+  endOfMonth,
+  format,
+  getDay,
+  isEqual,
+  isSameDay,
+  isSameMonth,
+  isToday,
+  parse,
+  parseISO,
+  startOfToday,
+} from "date-fns";
+
 export const cards = [
   {
-    slug: "Tipos-de-balatas-y-sus-ventajas-y-desventajas", //este es el titulo de la url
-    image: "/assets/img/blogGrid1.jpg",
-    titulo: "Tipos de balatas y sus ventajas y desventajas.",
+    slug: "Como-elegir-el-tipo-de-balatas-adecuadas-para-tu-auto", //este es el titulo de la url
+    image: "/assets/img/blogGrid3.jpg",
+    titulo: "Cómo elegir el tipo de balatas adecuadas para tu auto.",
     fecha: "Febrero, 2023",
     descripcion: [
       {
@@ -61,7 +78,7 @@ export const cards = [
   },
   {
     slug: "Tipos-de-balatas-y-sus-ventajas-y-desventajas",
-    image: "/assets/img/blogGrid3.jpg",
+    image: "/assets/img/blogGrid1.jpg",
     titulo: "Tipos de balatas y sus ventajas y desventajas.",
     fecha: "Febrero, 2023",
     descripcion: [
@@ -85,6 +102,10 @@ export const cards = [
   },
 ];
 
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
 const BlogArticle = () => {
   const [blog, setBlog] = useState({}); //Se inicializa un objeto en vacio
   const params = useParams(); //Obtenemos la informacion de la url en este caso el slug
@@ -103,24 +124,45 @@ const BlogArticle = () => {
   }, []);
   console.log(blog);
 
+  // CAMPO FECHAS
+  const today = startOfToday();
+  const [selectedDay, setSelectedDay] = useState(today);
+  const [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
+  const firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
+
+  const days = eachDayOfInterval({
+    start: firstDayCurrentMonth,
+    end: endOfMonth(firstDayCurrentMonth),
+  });
+
+  function previousMonth() {
+    let firstDayNextMonth = add(firstDayCurrentMonth, { months: -1 });
+    setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
+  }
+
+  function nextMonth() {
+    let firstDayNextMonth = add(firstDayCurrentMonth, { months: 1 });
+    setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
+  }
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
       <main className="mt-10">
         {/* TITULO E IMAGEN */}
         <div className="mb-4 md:mb-0 w-full mx-auto relative">
           <div className="px-4 lg:px-0">
-            <h2 className="text-4xl font-semibold text-gray-800 leading-tight mb-4">
+            <h2 className="text-4xl font-semibold text-white leading-tight mb-4">
               {blog[0] && blog[0].titulo}
             </h2>
           </div>
           <img
-            src="/assets/img/blogGrid1.jpg"
+            src={blog[0] && blog[0].image}
             className="w-full object-cover lg:rounded h-96"
           />
         </div>
         {/* CUERPO DEL ARTICULO */}
         <div className="flex flex-col lg:flex-row lg:space-x-12">
-          <div className="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+          <div className="px-4 lg:px-0 mt-12 text-gray-400 text-lg leading-relaxed w-full lg:w-3/4">
             {blog[0] &&
               blog.map((elementosBlog, i) => (
                 <div key={i}>
@@ -132,10 +174,133 @@ const BlogArticle = () => {
                 </div>
               ))}
           </div>
+          <div className="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm flex flex-col gap-4">
+            <div className="p-4 border-t border-b md:border md:rounded border-[#DB2D2E]">
+              <div className="flex py-2">
+                <img
+                  src="/assets/img/logo.png"
+                  className="h-10 w-10 rounded-full mr-2 object-cover"
+                />
+                <div>
+                  <p className="font-semibold text-gray-400 text-sm">
+                    {" "}
+                    SM Premium Brakes{" "}
+                  </p>
+                  <p className="font-semibold text-gray-400 text-xs">
+                    {" "}
+                    Editor{" "}
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-400 py-3 text-justify">
+                En Premium Brakes, encontrará artículos informativos sobre cómo
+                funcionan las balatas, los diferentes tipos de balatas
+                disponibles y cómo elegir las adecuadas para su vehículo.
+              </p>
+              <button className="px-2 py-1 text-gray-100 bg-[#DB2D2E] flex w-full items-center justify-center rounded">
+                Sigueme
+              </button>
+            </div>
+            <div className="p-4 border-t border-b md:border md:rounded border-[#DB2D2E]">
+              <div className="md:pr-14">
+                <div className="flex items-center">
+                  <h2 className="flex-auto font-semibold text-white">
+                    {format(firstDayCurrentMonth, "MMMM yyyy")}
+                  </h2>
+                  <button
+                    type="button"
+                    onClick={previousMonth}
+                    className="-my-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+                  >
+                    <span className="sr-only">Previous month</span>
+                    <ChevronLeftIcon className="w-5 h-5" aria-hidden="true" />
+                  </button>
+                  <button
+                    onClick={nextMonth}
+                    type="button"
+                    className="-my-1.5 -mr-1.5 ml-2 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+                  >
+                    <span className="sr-only">Next month</span>
+                    <ChevronRightIcon className="w-5 h-5" aria-hidden="true" />
+                  </button>
+                </div>
+                <div className="grid grid-cols-7 mt-10 text-xs leading-6 text-center text-gray-400">
+                  <div>S</div>
+                  <div>M</div>
+                  <div>T</div>
+                  <div>W</div>
+                  <div>T</div>
+                  <div>F</div>
+                  <div>S</div>
+                </div>
+                <div className="grid grid-cols-7 mt-2 text-sm text-white">
+                  {days.map((day, dayIdx) => (
+                    <div
+                      key={day.toString()}
+                      className={classNames(
+                        dayIdx === 0 && colStartClasses[getDay(day)],
+                        "py-1.5"
+                      )}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => setSelectedDay(day)}
+                        className={classNames(
+                          isEqual(day, selectedDay) && "text-white",
+                          !isEqual(day, selectedDay) &&
+                            isToday(day) &&
+                            "text-red-500",
+                          !isEqual(day, selectedDay) &&
+                            !isToday(day) &&
+                            isSameMonth(day, firstDayCurrentMonth) &&
+                            "text-gray-900",
+                          !isEqual(day, selectedDay) &&
+                            !isToday(day) &&
+                            !isSameMonth(day, firstDayCurrentMonth) &&
+                            "text-gray-400",
+                          isEqual(day, selectedDay) &&
+                            isToday(day) &&
+                            "bg-red-500",
+                          isEqual(day, selectedDay) &&
+                            !isToday(day) &&
+                            "bg-gray-900",
+                          !isEqual(day, selectedDay) && "hover:bg-gray-200",
+                          (isEqual(day, selectedDay) || isToday(day)) &&
+                            "font-semibold",
+                          "mx-auto flex h-8 w-8 items-center justify-center rounded-full"
+                        )}
+                      >
+                        <time dateTime={format(day, "yyyy-MM-dd")}>
+                          {format(day, "d")}
+                        </time>
+                      </button>
+
+                      {/* <div className="w-1 h-1 mx-auto mt-1">
+                        {meetings.some((meeting) =>
+                          isSameDay(parseISO(meeting.startDatetime), day)
+                        ) && (
+                          <div className="w-1 h-1 rounded-full bg-sky-500"></div>
+                        )}
+                      </div> */}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </section>
   );
 };
 
+const colStartClasses = [
+  "",
+  "col-start-2",
+  "col-start-3",
+  "col-start-4",
+  "col-start-5",
+  "col-start-6",
+  "col-start-7",
+];
 export default BlogArticle;

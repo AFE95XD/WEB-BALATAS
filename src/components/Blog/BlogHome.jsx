@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const cards = [
   {
-    url: "Como-elegir-el-tipo-de-balatas-adecuadas-para-tu-auto.",
+    url: "Como-elegir-el-tipo-de-balatas-adecuadas-para-tu-auto",
     image: "/assets/img/blogGrid3.jpg",
     titulo: "Cómo elegir el tipo de balatas adecuadas para tu auto.",
     fecha: "Febrero, 2023",
