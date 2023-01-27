@@ -15,7 +15,7 @@ const cabecera = [
   },
   {
     icono: PhoneIcon,
-    texto: "(722) 238 5244, (722) 705 9029, (722) 471 1254",
+    texto: "(722) 238 5244",
   },
   {
     icono: EnvelopeIcon,

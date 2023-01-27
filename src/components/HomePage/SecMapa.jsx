@@ -1,29 +1,24 @@
-// import GoogleMapReact from "google-map-react";
+import React from "react";
 
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const SecMapa = () => {
+  return (
+    <section className="text-gray-600 body-font pb-8">
+      <h2 className="text-center text-4xl font-bold text-white pb-16">
+        Nos ubicamos en
+      </h2>
+      <div className="w-full">
+        <iframe
+          width="100%"
+          height="600"
+          //   frameBorder="0"
+          //   scrolling="no"
+          //   marginHeight="0"
+          //   marginWidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Av.%20Solidaridad%20Las%20Torres%201543%20%20San%20Salvador%20Tizatlalli%20%20Metepec,%20Edo.%20M%C3%A9x.,%20C.P.%2052172+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+    </section>
+  );
+};
 
-// const SecMapa = () => {
-//   const defaultProps = {
-//     center: {
-//       lat: 10.99835602,
-//       lng: 77.01502627,
-//     },
-//     zoom: 11,
-//   };
-//   return (
-//     <section>
-//       // Important! Always set the container height explicitly
-//       <div style={{ height: "100%", width: "100%" }}>
-//         <GoogleMapReact
-//           bootstrapURLKeys={{ key: "" }}
-//           defaultCenter={defaultProps.center}
-//           defaultZoom={defaultProps.zoom}
-//         >
-//           <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
-//         </GoogleMapReact>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default SecMapa;
+export default SecMapa;
