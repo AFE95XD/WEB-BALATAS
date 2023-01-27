@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Pag404 = () => {
   return (
     <main class="h-screen w-full flex flex-col justify-center items-center">
-      <h1 class="text-9xl font-extrabold text-black tracking-widest">404</h1>
+      <h1 class="text-9xl font-extrabold text-white tracking-widest">404</h1>
       <div class="bg-[#DB2D2E] px-2 text-sm rounded rotate-12 absolute text-white">
         Página No Encontrada
       </div>
